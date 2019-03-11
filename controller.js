@@ -17,14 +17,14 @@ function getDisplayDate(date) {
     var m = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     return `${m[new Date(date).getMonth()]} ${(new Date(date).getYear() + 1900)}`;
 }
-
+let flag = ''
 function populateMenu(categories) {
     var output = "";
     console.log(categories);
     var keys = alphaSort(categories);
     console.log(keys);
     for (i in keys) {
-        output += `<li class='filter' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
+        output += `<li class='filter ' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
     }
     output += "<li class='filter' onclick='contactDialog()'>Contact</li>";
     document.getElementById('links').innerHTML = output;
@@ -70,6 +70,8 @@ function getUrl(url, text) {
 }
 
 function populateTimeline(filter) {
+    // populateMenu(categories)/
+    flag = filter
     // Reset
     rehide();
     document.getElementById('cd-timeline').innerHTML = "";
@@ -148,7 +150,7 @@ function populateTimeline(filter) {
                 output += getUrl(item.link, item.linkText);
             }
             if (getDisplayDate(currDate) != getDisplayDate(item.date)) {
-                output += `<span class='cd-date'>${getDisplayDate(item.date)}</span>`;   
+                output += `<span class='cd-date'>${item.date}</span>`;   
                 currDate = item.date;
             }
             output += "</div></div>";
@@ -186,6 +188,6 @@ function contactDialog() {
 }
 
 window.onload = function() {
-    categories = populateTimeline();
+    categories = populateTimeline('Background');
     populateMenu(categories);
 };

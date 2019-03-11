@@ -17,54 +17,48 @@ const REVISE = 'https://medium.com/@cnguynminh/fake-m%E1%BB%99t-th%C6%B0-vi%E1%B
 me = [
     {
         type: "Articles",
-        name: "Viết lại react ",
-        link: REVISE,
-        linkText: "Read on medium",
-        date: "February 5 2019",
-    }, {
-        type: "Articles",
-        name: "Viết lại medium mini ",
+        name: "Clone Medium ",
         link: "https://kipalog.com/posts/Tao-Single-Page-App-giong-Medium-bang-Reactjs-Redux-ket-hop-voi-Nodejs",
         linkText: "Read on Kipalog",
-        description: "Viết clone lại medium mini, có đầy đủ các chức năng CRUD và front end dùng react render",
+        description: "Clone medium mini for both backend and front end(I am test it )",
         date: "November 27 2018",
     }, {
         type: "Articles",
-        name: "Xử lý text và viết thư viện tạo ra richtext",
+        name: "Handler text as pure javascript and try writting library rich text  ",
         link: "https://kipalog.com/posts/Xu-ly-Text-trong-javascript--basic-concept-ve-Range--selection--document-execCommand",
         linkText: "Read on Kipalog",
         date: "October 2 2018"
     }, {
         type: "Articles",
-        name: "Viết tiểu sử về leonardo ",
+        name: "Write about biography Leonardo ",
         link: "https://medium.com/@cnguynminh/leonardo-da-vinci-ph%E1%BA%A7n-1-th%C3%B3i-quen-f93be3f9aa44?source=your_stories_page---------------------------",
         linkText: "Read on Medium",
         date: "June 13 2018"
     }, {
         type: "Projects",
         name: "Front end App clone facebook",
-        description: "Front end viết bằng react, store dùng unState, app có chat, viết bài(có thể giống medium), xếp rank, view project ng khác",
+        description: "Front end app write react,it 's use graphql-client, socket-client(for function like notification, chat), style component, unstate(state management)",
         link: "https://github.com/ducga1998/FrontEndMediumDuc",
         linkText: VIEW_GITHUB,
         date: "February 2019"
     }, {
         type: "Projects",
         name: "Backend end App clone facebook",
-        description: "Backend cho app ở trên, dùng nodejs, graphql",
+        description: "Backend for app below, use nodejs and graphql",
         link: "https://github.com/ducga1998/backendMediumDuc",
         linkText: VIEW_GITHUB,
         date: "August 2018"
     }, {
         type: "Projects",
         name: "Fake react",
-        description: "Fake thư viện react, sử dụng đc lifecycle, render đc kiểu cấu trúc như react",
+        description: "Rewrite library react, it'  can use lifecycle, render as struct tree component react",
         link: "https://github.com/ducga1998/FakeReact",
         linkText: VIEW_GITHUB,
         date: "January 2018"
     }, {
         type: "Projects",
         name: "Learn canvas",
-        description: "dùng js vẽ ra canvas , tạo ra hiệu ứng khói",
+        description: "I am use canvas to draw rocket smoke ",
         link: "https://trello.com/b/neBVWGH2/mars",
         linkText: VIEW_GITHUB,
         date: "July 2018"
@@ -77,13 +71,29 @@ me = [
     {
         type : 'Background',
         name : 'Front end development',
-        description: "Front end development tại shinetheme<br> Chuyên là về workpres, theme",
+        description: "Front end development at Shinetheme<br> I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
         date : '2017-2018'
     },
     {
         type : 'Background',
         name : 'Javascript developer',
-        description: "Javascript developer tại bravebits <br /> Làm mọi thứ với javscript, viết app realtime, frontend , backend cho pagefly ",
-        date : 'Cuối năm 2018-2019'
+        description: "Join in project Page builder, competently javasript, library reactjs, In project I am write code for both backend and front end for pagefly, learn agile methodology, git and The ability to work grapes ",
+        date : '2018-2019'
+    },
+    {
+        type : 'Design',
+        name : 'Design room chat',
+        link : 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A1',
+        description: "Design room chat use firma for front end clone facebook ",
+        date : '2018-2019',
+        linkText: 'View in firma',
+    },
+    {
+        type : 'Design',
+        name : 'Design Profile for project front end clone facebook ',
+        link : 'https://www.figma.com/file/TQpydpyl6Ilg4FMt6QAYQ9wi/Design-other-profile',
+        description: "Design Profile for project front end clone facebook",
+        linkText: 'View in firma',
+        date : '2018-2019'
     }
 ]
