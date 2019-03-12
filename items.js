@@ -64,13 +64,13 @@ me = [
         date: "July 2018"
     },{
         type : 'Background',
-        name : 'Learn Infomation technology atTransport and communication',
+        name : 'Learn Infomation technology at Transport and communication',
         description: "Infomation technology",
         date : '2016-2018'
     },
     {
         type : 'Background',
-        name : 'Front end development at shinetheme',
+        name : 'Front end development at Shinetheme',
         description: "Front end development at Shinetheme, I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
         date : '2017-2018'
     },
