@@ -26,7 +26,7 @@ function populateMenu(categories = undefined) {
     for (i in keys) {
         output += `<li class='filter ${keys[i]=== flag?'activeButton':''} ' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
     }
-    output += "<li class='filter' onclick='contactDialog()'>Contact</li>";
+    output += `<li class='filter ${'Contact'=== flag?'activeButton':''}' onclick='contactDialog()'>Contact</li>`;
     document.getElementById('links').innerHTML = output;
 }
 
@@ -53,8 +53,6 @@ function getUrl(url, text) {
 
 function populateTimeline(filter) {
     flag = filter
-    // render()
-    // populateMenu(categories)/
     populateMenu()
     
     // Reset
@@ -119,6 +117,8 @@ function populateTimeline(filter) {
 
 function contactDialog() {
     // Generate things
+    flag = 'Contact'
+    populateMenu()
     var output = "<ul>";
     for (var i = 0; i < contact.length; i++) {
         var item = contact[i];
