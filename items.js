@@ -37,14 +37,14 @@ me = [
     }, {
         type: "Projects",
         name: "Front end App clone facebook",
-        description: "Front end app write react, it 's use graphql-client, socket-client(for function like notification, chat), style component, unstate(state management)",
+        description: "Front end app write react, it 's use graphql-client, socket-client(for feature like notification, chat), style component, unstate(state management)",
         link: "https://github.com/ducga1998/FrontEndMediumDuc",
         linkText: VIEW_GITHUB,
         date: "February 2019"
     }, {
         type: "Projects",
         name: "Backend end App clone facebook",
-        description: "Backend for app below, use nodejs and graphql",
+        description: "Backend for app below, use nodejs and graphql, moogoose, socket for backend",
         link: "https://github.com/ducga1998/backendMediumDuc",
         linkText: VIEW_GITHUB,
         date: "August 2018"
