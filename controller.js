@@ -44,10 +44,7 @@ function getUrl(url, text) {
 }
 
 function populateTimeline(filter) {
-    localStorage.setItem('cv-active',filter)
-    flag = filter
-    populateMenu()
-    
+    activeNativigation(filter)
     // Reset
     rehide();
     document.getElementById('cd-timeline').innerHTML = "";
@@ -74,7 +71,6 @@ function populateTimeline(filter) {
                 output += `<h1>${item.name}</h1>`;
                 output += item.description ? `<h3>${item.description}</h3>` : '';
             }
-
             else if (item.type == "Design") {
                 output += `<h1>${item.name}</h1>`;
                 output += item.description ? `<h3>${item.description}</h3>` : '';
@@ -105,9 +101,15 @@ function populateTimeline(filter) {
     $('#cd-timeline').fadeIn(400);
     return categories;
 }
-
+function activeNativigation(active){
+    localStorage.setItem('cv-active',active)
+    flag = active
+    populateMenu()
+}
 function contactDialog() {
     // Generate things
+    activeNativigation('Contact')
+    localStorage.setItem('cv-active','Contact')
     flag = 'Contact'
     populateMenu()
     var output = "<ul>";
