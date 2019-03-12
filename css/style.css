@@ -16,7 +16,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: 'Amatic', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #7f8c97;
   background-color: #e9f0f5;
 }
@@ -81,8 +81,9 @@ header {
   flex-direction:  column;
   padding-left : 10px;
   /* line-height: 200px; */
-  background: #2a5b71;
+  background: #06004e;
   box-shadow: 1px 6px 9px 2px;
+  font-size: 1.2em;
 }
 header h1 {
     color: white;
@@ -301,21 +302,26 @@ header img {
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
+  font-size:  1.3em;
+  cursor: pointer;
 }
 .cd-timeline-content:after {
   content: "";
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
-  color: #303e49;
+.cd-timeline-content h1 {
+  color: #06004e;
+  font-size: 1.2em;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
+  font-stretch: 900;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
+  font-stretch: 900;
 }
 .cd-timeline-content p {
   margin: 1em 0;
@@ -335,7 +341,7 @@ header img {
 .cd-timeline-content .cd-date {
   float: left;
   padding: .8em 0;
-  opacity: .7;
+  opacity: 0.8;
 }
 .cd-timeline-content::before {
   content: '';
@@ -402,6 +408,7 @@ header img {
     left: auto;
     right: 122%;
     text-align: right;
+    font-stretch: 900;
   }
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
@@ -598,6 +605,7 @@ li.filter:hover {
   color: #2196f3;
   margin-top: 7px;
   margin-left: 7px;
+  font-style: italic;
 }
 
 .cd-timeline-content h4 {

@@ -70,13 +70,13 @@ me = [
     },
     {
         type : 'Background',
-        name : 'Front end development',
+        name : 'Front end development at shinetheme',
         description: "Front end development at Shinetheme<br> I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
         date : '2017-2018'
     },
     {
         type : 'Background',
-        name : 'Javascript developer',
+        name : 'Javascript developer ar Bravebits',
         description: "Join in project Page builder, competently javasript, library reactjs, In project I am write code for both backend and front end for pagefly, learn agile methodology, git and The ability to work grapes ",
         date : '2018-2019'
     },
