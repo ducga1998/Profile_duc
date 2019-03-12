@@ -1,18 +1,6 @@
-/* My data 
- * 
- * This will be a JSON object so I can easily populate different fields.
- * Eventually this will move to a separate file.
- * It may be useful to develop certain types of schema.
- */
 
-/* Some Constants */
-const READ_FULL_TEXT = "Read Full Text";
-const VIEW_DEVPOST = "View DevPost Submission";
 const VIEW_GITHUB = "Source on GitHub";
-const VIEW_EVENT = "View Event Page";
-const VIEW_WEBSITE = "Visit Website";
-const READ_ARTICLE = "Read Article";
-const WATCH_VIDEO = "Watch the Video";
+
 const REVISE = 'https://medium.com/@cnguynminh/fake-m%E1%BB%99t-th%C6%B0-vi%E1%BB%87n-gi%E1%BB%91ng-react-v%E1%BB%9Bi-g%E1%BA%A7n-200-d%C3%B2ng-javascript-bdb367fbcd76'
 me = [
     {
@@ -26,7 +14,7 @@ me = [
     {
         type: "Articles",
         name: "Fake react to 200 line code ",
-        link: "https://medium.com/@cnguynminh/fake-m%E1%BB%99t-th%C6%B0-vi%E1%BB%87n-gi%E1%BB%91ng-react-v%E1%BB%9Bi-g%E1%BA%A7n-200-d%C3%B2ng-javascript-bdb367fbcd76?source=your_stories_page---------------------------",
+        link: REVISE,
         linkText: "Read on Medium",
         description: "I am rewrite library reactjs, I am guidline how create react and understand detail way react render ",
         date: "November 27 2018",
@@ -85,7 +73,7 @@ me = [
     },
     {
         type : 'Background',
-        name : 'Javascript developer ar Bravebits',
+        name : 'Javascript developer at Bravebits',
         description: "Join in project Page builder, competently javasript, library reactjs. In project I am write code for both backend and front end for pagefly, learn agile methodology, git and the ability to work grapes ",
         date : '2018-2019'
     },
