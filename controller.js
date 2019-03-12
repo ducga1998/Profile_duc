@@ -109,9 +109,6 @@ function activeNativigation(active){
 function contactDialog() {
     // Generate things
     activeNativigation('Contact')
-    localStorage.setItem('cv-active','Contact')
-    flag = 'Contact'
-    populateMenu()
     var output = "<ul>";
     for (var i = 0; i < contact.length; i++) {
         var item = contact[i];
