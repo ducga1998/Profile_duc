@@ -29,20 +29,11 @@ a {
   padding-right: 4px;
   transition: all 0.3s;
 }
-
-a:hover {
-  background-color: #81c784;
-}
-
 #contact-me a {
   background: none;
   transition: all 0.3s;
 }
 
-#contact-me a:hover {
-  border-bottom: solid 1px #388e3c;
-  background: #a5d6a7;
-}
 
 img {
   max-width: 100%;
@@ -570,8 +561,11 @@ footer {
     margin-bottom: 40px;
     text-align: center;
     display: none;
+    transition: .2s;
 }
-
+#contact-me img:hover{
+  box-shadow: 0 0 0 4px#06004e;
+}
 #contact-me img {
     background-color: #09f;
     top: 0;
