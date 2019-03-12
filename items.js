@@ -22,7 +22,16 @@ me = [
         linkText: "Read on Kipalog",
         description: "Clone medium mini for both backend and front end(I am test it )",
         date: "November 27 2018",
-    }, {
+    },
+    {
+        type: "Articles",
+        name: "Fake react to 200 line code ",
+        link: "https://medium.com/@cnguynminh/fake-m%E1%BB%99t-th%C6%B0-vi%E1%BB%87n-gi%E1%BB%91ng-react-v%E1%BB%9Bi-g%E1%BA%A7n-200-d%C3%B2ng-javascript-bdb367fbcd76?source=your_stories_page---------------------------",
+        linkText: "Read on Medium",
+        description: "I am rewrite library reactjs, I am guidline how create react and understand detai way react render ",
+        date: "November 27 2018",
+    },
+     {
         type: "Articles",
         name: "Handler text as pure javascript and try writting library rich text  ",
         link: "https://kipalog.com/posts/Xu-ly-Text-trong-javascript--basic-concept-ve-Range--selection--document-execCommand",
@@ -83,7 +92,7 @@ me = [
     {
         type : 'Design',
         name : 'Design room chat',
-        link : 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A1',
+        link : 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A'1,
         description: "Design room chat use firma for front end clone facebook ",
         date : '2018-2019',
         linkText: 'View in firma',
