@@ -1,7 +1,7 @@
 function dateSort(a, b) {
     return new Date(b.date) - new Date(a.date);
 }
-
+let categorieSave = null
 function alphaSort(map) {
     keys = [];
     for (i in map) {
@@ -18,13 +18,13 @@ function getDisplayDate(date) {
     return `${m[new Date(date).getMonth()]} ${(new Date(date).getYear() + 1900)}`;
 }
 let flag = ''
-function populateMenu(categories) {
+function populateMenu(categories = undefined) {
     var output = "";
-    console.log(categories);
-    var keys = alphaSort(categories);
+    // console.log(categories);
+    var keys = alphaSort(categorieSave|| categories);
     console.log(keys);
     for (i in keys) {
-        output += `<li class='filter ' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
+        output += `<li class='filter ${keys[i]=== flag?'activeButton':''} ' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
     }
     output += "<li class='filter' onclick='contactDialog()'>Contact</li>";
     document.getElementById('links').innerHTML = output;
@@ -52,8 +52,11 @@ function getUrl(url, text) {
 }
 
 function populateTimeline(filter) {
-    // populateMenu(categories)/
     flag = filter
+    // render()
+    // populateMenu(categories)/
+    populateMenu()
+    
     // Reset
     rehide();
     document.getElementById('cd-timeline').innerHTML = "";
@@ -135,8 +138,13 @@ function contactDialog() {
         $('#contact-me').fadeIn(200);
     }, 200);
 }
+function render(){
+    
+}
 
 window.onload = function () {
     categories = populateTimeline('Background');
+    console.log('categories',categories)
+    categorieSave = categories
     populateMenu(categories);
 };

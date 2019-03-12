@@ -578,11 +578,13 @@ footer {
 }
 
 li.filter, h2 {
+    padding: 10px;
     color: #e1e8db;
     transition: all 0.15s;
 }
 .activeButton{
-  background:  red;
+  background: #2196F3;
+  border-radius: 5px;
   color : white;
 }
 li.filter:hover {
