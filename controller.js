@@ -10,17 +10,9 @@ function alphaSort(map) {
     return keys.sort();
 }
 
-function getDisplayDate(date) {
-    if (date == undefined || date == '') {
-        return '';
-    }
-    var m = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
-    return `${m[new Date(date).getMonth()]} ${(new Date(date).getYear() + 1900)}`;
-}
 let flag = ''
 function populateMenu(categories = undefined) {
     var output = "";
-    // console.log(categories);
     var keys = alphaSort(categorieSave|| categories);
     console.log(keys);
     for (i in keys) {
@@ -99,10 +91,8 @@ function populateTimeline(filter) {
             if (item.link !== undefined) {
                 output += getUrl(item.link, item.linkText);
             }
-            // if (getDisplayDate(currDate) != getDisplayDate(item.date)) {
                 output += `<span class='cd-date'>${item.date}</span>`;
                 currDate = item.date;
-            // }
             output += "</div></div>";
             document.getElementById('cd-timeline').innerHTML += output;
             count++;
@@ -138,10 +128,6 @@ function contactDialog() {
         $('#contact-me').fadeIn(200);
     }, 200);
 }
-function render(){
-    
-}
-
 window.onload = function () {
     categories = populateTimeline('Background');
     console.log('categories',categories)
