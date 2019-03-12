@@ -207,9 +207,7 @@ header img {
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
-}
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+  transition:  .2s;
 }
 .cd-timeline-img.cd-movie {
   background: #c03b44;
@@ -621,4 +619,6 @@ li.filter:hover {
   flex-direction:  row;
   color : white;
 }
-.ok{}
+.cd-timeline-img:hover{
+    background:  #06004e;
+}

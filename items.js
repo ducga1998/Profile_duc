@@ -37,7 +37,7 @@ me = [
     }, {
         type: "Projects",
         name: "Front end App clone facebook",
-        description: "Front end app write react,it 's use graphql-client, socket-client(for function like notification, chat), style component, unstate(state management)",
+        description: "Front end app write react, it 's use graphql-client, socket-client(for function like notification, chat), style component, unstate(state management)",
         link: "https://github.com/ducga1998/FrontEndMediumDuc",
         linkText: VIEW_GITHUB,
         date: "February 2019"
@@ -64,20 +64,20 @@ me = [
         date: "July 2018"
     },{
         type : 'Background',
-        name : 'Transport and communication',
+        name : 'Learn Infomation technology atTransport and communication',
         description: "Infomation technology",
         date : '2016-2018'
     },
     {
         type : 'Background',
         name : 'Front end development at shinetheme',
-        description: "Front end development at Shinetheme<br> I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
+        description: "Front end development at Shinetheme, I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
         date : '2017-2018'
     },
     {
         type : 'Background',
         name : 'Javascript developer ar Bravebits',
-        description: "Join in project Page builder, competently javasript, library reactjs, In project I am write code for both backend and front end for pagefly, learn agile methodology, git and The ability to work grapes ",
+        description: "Join in project Page builder, competently javasript, library reactjs. In project I am write code for both backend and front end for pagefly, learn agile methodology, git and the ability to work grapes ",
         date : '2018-2019'
     },
     {

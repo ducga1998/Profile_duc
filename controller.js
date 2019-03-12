@@ -33,32 +33,14 @@ function populateMenu(categories) {
 function useImage(type) {
     var icon = "icons/checkbox-blank-circle.svg";
     var color = "#2196f3";
-    if (type == "Apps") {
-        icon = "icons/code-tags.svg";
-    } else if (type == "Articles") {
+    if (type == "Articles") {
         icon = "icons/pencil.svg";
-    } else if (type == "Awards") {
-        icon = "icons/ribbon.svg";
-    } else if (type == "Books") {
-        icon = "icons/library.svg";
-    } else if (type == "Education") {
+    } else if (type == "Background") {
         icon = "icons/school.svg";
-    } else if (type == "Employment") {
-        icon = "icons/briefcase.svg";
-    } else if (type == "Events") {
-        icon = "icons/calendar.svg";
-    } else if (type == "Hacks") {
-        icon = "icons/code-tags.svg";
-    } else if (type == "News") {
-        icon = "icons/newspaper.svg";
-    } else if (type == "Patents") {
-        icon = "icons/bank.svg";
     } else if (type == "Projects") {
         icon = "icons/memory.svg";
-    } else if (type == "Publications") {
+    } else if (type == "Design") {
         icon = "icons/book.svg";
-    } else if (type == "Videos") {
-        icon = "icons/video.svg";
     }
     var output = `<div class='cd-timeline-img cd-picture' style='background-color: ${color}'>
         <img src='${icon}' alt='${type}'></div>`;
