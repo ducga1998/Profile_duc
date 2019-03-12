@@ -92,7 +92,7 @@ me = [
     {
         type : 'Design',
         name : 'Design room chat',
-        link : 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A'1,
+        link : 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A',
         description: "Design room chat use firma for front end clone facebook ",
         date : '2018-2019',
         linkText: 'View in firma',

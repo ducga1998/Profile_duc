@@ -44,6 +44,7 @@ function getUrl(url, text) {
 }
 
 function populateTimeline(filter) {
+    localStorage.setItem('cv-active',filter)
     flag = filter
     populateMenu()
     
@@ -129,7 +130,8 @@ function contactDialog() {
     }, 200);
 }
 window.onload = function () {
-    categories = populateTimeline('Background');
+    
+    categories = populateTimeline(localStorage.getItem('cv-active')||'Background');
     console.log('categories',categories)
     categorieSave = categories
     populateMenu(categories);
