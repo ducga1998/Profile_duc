@@ -31,7 +31,16 @@ me = [
         link: "https://medium.com/@cnguynminh/leonardo-da-vinci-ph%E1%BA%A7n-1-th%C3%B3i-quen-f93be3f9aa44?source=your_stories_page---------------------------",
         linkText: "Read on Medium",
         date: "June 13 2018"
-    }, {
+    }, 
+    {
+        type : 'Projects',
+        name : 'Page Builder mini',
+        description : 'Create page builder mini and simple but very powerful',
+        link : 'https://github.com/ducga1998/page-builder-duc',
+        linkText: VIEW_GITHUB,
+        date: "Mars 2019"
+    },
+    {
         type: "Projects",
         name: "Front end App clone facebook",
         description: "Front end app write react, it 's use graphql-client, socket-client(for feature like notification, chat), style component, unstate(state management)",
@@ -59,7 +68,9 @@ me = [
         link: "https://trello.com/b/neBVWGH2/mars",
         linkText: VIEW_GITHUB,
         date: "July 2018"
-    },{
+    },
+    
+    {
         type : 'Background',
         name : 'Learn Infomation technology at Transport and communication',
         description: "Infomation technology",
@@ -89,6 +100,14 @@ me = [
         type : 'Design',
         name : 'Design Profile for project front end clone facebook ',
         link : 'https://www.figma.com/file/TQpydpyl6Ilg4FMt6QAYQ9wi/Design-other-profile',
+        description: "Design Profile for project front end clone facebook",
+        linkText: 'View in firma',
+        date : '2018-2019'
+    },
+    {
+        type : 'Design',
+        name : 'Design Layout for pageBuilder',
+        link : 'https://www.figma.com/file/g7AFVNhtX8LI5AUSwtSHtnef/Untitled?node-id=1%3A3',
         description: "Design Profile for project front end clone facebook",
         linkText: 'View in firma',
         date : '2018-2019'
