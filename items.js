@@ -78,7 +78,7 @@ me = [
     },
     {
         type : 'Background',
-        name : 'Front end development at Shinetheme',
+        name : 'Front end developer at Shinetheme',
         description: "Front end development at Shinetheme, I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
         date : '2017-2018'
     },
