@@ -54,9 +54,9 @@ function populateTimeline(filter) {
     // Current date
     currDate = "";
     // Query categories
+    let checkName = ''
     categories = [];
     var count = 0;
-
     for (var index = 0; index < me.length; index++) {
         var item = me[index];
         categories[item.type] = item.type;
@@ -70,19 +70,24 @@ function populateTimeline(filter) {
             if (item.type == "Articles") {
                 output += `<h1>${item.name}</h1>`;
                 output += item.description ? `<h3>${item.description}</h3>` : '';
+                checkName = 'Article'
             }
             else if (item.type == "Design") {
                 output += `<h1>${item.name}</h1>`;
                 output += item.description ? `<h3>${item.description}</h3>` : '';
+                checkName = 'Project design'
             } else if (item.type == "Projects") {
                 output += `<h1>${item.name}</h1>`;
                 output += `<h3>${item.description}</h3>`;
+                checkName = 'Project'
             }
             else if (item.type == "Background") {
                 output += `<h1>${item.name}</h1>`;
                 output += `<h3>${item.description}</h3>`;
+                checkName = 'Background'
             } else {
                 output += `<h1>${item.name}</h1>`;
+                output += item.description? `<h3>${item.description}</h3>`: '';
             }
             output += "</p>";
             if (item.link !== undefined) {
@@ -93,7 +98,7 @@ function populateTimeline(filter) {
             output += "</div></div>";
             document.getElementById('cd-timeline').innerHTML += output;
             count++;
-            document.getElementById('view_x_items').innerHTML = count + ((count == 1) ? " Item" : " Items");
+            document.getElementById('view_x_items').innerHTML = count+ ' ' + ((count == 1) ? item.type :  checkName );
         }
     }
     rehide();
