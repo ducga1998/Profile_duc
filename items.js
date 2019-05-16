@@ -19,7 +19,7 @@ me = [
         description: "I am rewrite library reactjs, I am guidline how create react and understand detail way react render ",
         date: "November 27 2018",
     },
-     {
+    {
         type: "Articles",
         name: "Handler text as pure javascript and try writting library rich text  ",
         link: "https://kipalog.com/posts/Xu-ly-Text-trong-javascript--basic-concept-ve-Range--selection--document-execCommand",
@@ -31,12 +31,12 @@ me = [
         link: "https://medium.com/@cnguynminh/leonardo-da-vinci-ph%E1%BA%A7n-1-th%C3%B3i-quen-f93be3f9aa44?source=your_stories_page---------------------------",
         linkText: "Read on Medium",
         date: "June 13 2018"
-    }, 
+    },
     {
-        type : 'Projects',
-        name : 'Page Builder mini',
-        description : 'Create page builder mini and simple but very powerful',
-        link : 'https://github.com/ducga1998/page-builder-duc',
+        type: 'Projects',
+        name: 'Page Builder mini',
+        description: 'Create page builder mini and simple but very powerful',
+        link: 'https://github.com/ducga1998/page-builder-duc',
         linkText: VIEW_GITHUB,
         date: "Mars 2019"
     },
@@ -61,7 +61,9 @@ me = [
         link: "https://github.com/ducga1998/FakeReact",
         linkText: VIEW_GITHUB,
         date: "January 2018"
-    }, {
+    },
+
+    {
         type: "Projects",
         name: "Learn canvas",
         description: "I am use canvas to draw rocket smoke ",
@@ -69,47 +71,62 @@ me = [
         linkText: VIEW_GITHUB,
         date: "July 2018"
     },
-    
     {
-        type : 'Background',
-        name : 'Learn Infomation technology at Transport and communication',
+        type: 'Projects',
+        name: 'Landing Page',
+        description: "Create 1 landing page to 1 file psd available",
+        link: "https://github.com/ducga1998/landingPage",
+        linkText: VIEW_GITHUB,
+        date: "May 2018"
+    },
+    {
+        type: 'Projects',
+        name: 'Crawler',
+        description: "Cwawl data to all web popular as facebook, shopify, youtube, Iam use puppeteer",
+        link: "https://github.com/ducga1998/crawler",
+        linkText: VIEW_GITHUB,
+        date: "May 2019"
+    },
+    {
+        type: 'Background',
+        name: 'Learn Infomation technology at Transport and communication',
         description: "Infomation technology",
-        date : '2016-2018'
+        date: '2016-2018'
     },
     {
-        type : 'Background',
-        name : 'Front end developer at Shinetheme',
+        type: 'Background',
+        name: 'Front end developer at Shinetheme',
         description: "Front end development at Shinetheme, I am worked workpress, create plugin for workpress, join project relate to platfrom woocommerce about booking hotel",
-        date : '2017-2018'
+        date: '2017-2018'
     },
     {
-        type : 'Background',
-        name : 'Javascript developer at Bravebits',
+        type: 'Background',
+        name: 'Javascript developer at Bravebits',
         description: "Join in project Page builder, competently javasript, library reactjs. In project I am write code for both backend and front end for pagefly, learn agile methodology, git and the ability to work grapes ",
-        date : '2018-2019'
+        date: '2018-2019'
     },
     {
-        type : 'Design',
-        name : 'Design room chat',
-        link : 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A',
+        type: 'Design',
+        name: 'Design room chat',
+        link: 'https://www.figma.com/file/ZxHRGHm7pVxk7rbeTwAUHIn5/UI-design-chat?node-id=0%3A',
         description: "Design room chat use firma for front end clone facebook ",
-        date : '2018-2019',
+        date: '2018-2019',
         linkText: 'View in firma',
     },
     {
-        type : 'Design',
-        name : 'Design Profile for project front end clone facebook ',
-        link : 'https://www.figma.com/file/TQpydpyl6Ilg4FMt6QAYQ9wi/Design-other-profile',
+        type: 'Design',
+        name: 'Design Profile for project front end clone facebook ',
+        link: 'https://www.figma.com/file/TQpydpyl6Ilg4FMt6QAYQ9wi/Design-other-profile',
         description: "Design Profile for project front end clone facebook",
         linkText: 'View in firma',
-        date : '2018-2019'
+        date: '2018-2019'
     },
     {
-        type : 'Design',
-        name : 'Design Layout for pageBuilder',
-        link : 'https://www.figma.com/file/g7AFVNhtX8LI5AUSwtSHtnef/Untitled?node-id=1%3A3',
+        type: 'Design',
+        name: 'Design Layout for pageBuilder',
+        link: 'https://www.figma.com/file/g7AFVNhtX8LI5AUSwtSHtnef/Untitled?node-id=1%3A3',
         description: "Design Profile for project front end clone facebook",
         linkText: 'View in firma',
-        date : '2018-2019'
+        date: '2018-2019'
     }
 ]
