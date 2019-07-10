@@ -13,12 +13,12 @@ function alphaSort(map) {
 let flag = ''
 function populateMenu(categories = undefined) {
     var output = "";
-    var keys = alphaSort(categorieSave|| categories);
+    var keys = alphaSort(categorieSave || categories);
     console.log(keys);
     for (i in keys) {
-        output += `<li class='filter ${keys[i]=== flag?'activeButton':''} ' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
+        output += `<li class='filter ${keys[i] === flag ? 'activeButton' : ''} ' onclick='populateTimeline(\"${keys[i]}\")'>${keys[i]}</li>`;
     }
-    output += `<li class='filter ${'Contact'=== flag?'activeButton':''}' onclick='contactDialog()'>Contact</li>`;
+    output += `<li class='filter ${'Contact' === flag ? 'activeButton' : ''}' onclick='contactDialog()'>Contact</li>`;
     document.getElementById('links').innerHTML = output;
 }
 
@@ -66,39 +66,41 @@ function populateTimeline(filter) {
             // Check type
             var output = "<div class='cd-timeline-block'>";
             output += useImage(item.type);
+
             output += "<div class='cd-timeline-content'><p>";
             if (item.type == "Articles") {
-                output += `<h1>${item.name}</h1>`;
+
                 output += item.description ? `<h3>${item.description}</h3>` : '';
                 checkName = 'Article'
             }
             else if (item.type == "Design") {
-                output += `<h1>${item.name}</h1>`;
+
                 output += item.description ? `<h3>${item.description}</h3>` : '';
                 checkName = 'Project design'
             } else if (item.type == "Projects") {
-                output += `<h1>${item.name}</h1>`;
+
                 output += `<h3>${item.description}</h3>`;
                 checkName = 'Project'
             }
             else if (item.type == "Background") {
-                output += `<h1>${item.name}</h1>`;
+
                 output += `<h3>${item.description}</h3>`;
                 checkName = 'Background'
             } else {
-                output += `<h1>${item.name}</h1>`;
-                output += item.description? `<h3>${item.description}</h3>`: '';
+
+                output += item.description ? `<h3>${item.description}</h3>` : '';
             }
             output += "</p>";
             if (item.link !== undefined) {
                 output += getUrl(item.link, item.linkText);
             }
-                output += `<span class='cd-date'>${item.date}</span>`;
-                currDate = item.date;
+
+            output += `<span class='cd-date'>${item.date}</span>`;
+            currDate = item.date;
             output += "</div></div>";
             document.getElementById('cd-timeline').innerHTML += output;
             count++;
-            document.getElementById('view_x_items').innerHTML = count+ ' ' + ((count == 1) ? item.type :  checkName );
+            document.getElementById('view_x_items').innerHTML = count + ' ' + ((count == 1) ? item.type : checkName);
         }
     }
     rehide();
@@ -106,8 +108,8 @@ function populateTimeline(filter) {
     $('#cd-timeline').fadeIn(400);
     return categories;
 }
-function activeNativigation(active){
-    localStorage.setItem('cv-active',active)
+function activeNativigation(active) {
+    localStorage.setItem('cv-active', active)
     flag = active
     populateMenu()
 }
@@ -134,9 +136,9 @@ function contactDialog() {
     }, 200);
 }
 window.onload = function () {
-    
-    categories = populateTimeline(localStorage.getItem('cv-active')||'Background');
-    console.log('categories',categories)
+
+    categories = populateTimeline(localStorage.getItem('cv-active') || 'Background');
+    console.log('categories', categories)
     categorieSave = categories
     populateMenu(categories);
 };

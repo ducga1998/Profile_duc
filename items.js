@@ -128,5 +128,19 @@ me = [
         description: "Design Profile for project front end clone facebook",
         linkText: 'View in firma',
         date: '2018-2019'
-    }
+    },
+    {
+        type: 'Hackathon',
+        name: 'AngleHack',
+        'description': 'vdfvdvdvdfvdfvdvdfvdffffffvdfvdfvd',
+        imageSrc: '',
+        date: ''
+    },
+    {
+        type: 'Hackathon',
+        name: 'AngleHack',
+        'description': 'vdfvdvdvdfvdfvdvdfvdffffffvdfvdfvd',
+        imageSrc: '',
+        date: ''
+    },
 ]
