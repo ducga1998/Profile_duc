@@ -71,6 +71,7 @@ function populateTimeline(filter) {
             output += useImage(item.type);
 
             output += "<div class='cd-timeline-content'><p>";
+            output += `<h1 style="padding : 10px 0px;">${item.name}</h1>`;
             if (item.type == "Articles") {
 
                 output += item.description ? `<h3>${item.description}</h3>` : '';
@@ -98,12 +99,11 @@ function populateTimeline(filter) {
                 output += getUrl(item.link, item.linkText);
             }
             if (item.imageSrc) {
-                output += `<h1 style="padding : 20px 4px">${item.name}</h1>`
                 output += `<img src=${item.imageSrc} />`
             }
             output += `<span class='cd-date'>${item.date}</span>`;
             currDate = item.date;
-            output += "</div></div>";
+            output += "</div>   </div>";
             document.getElementById('cd-timeline').innerHTML += output;
             count++;
             document.getElementById('view_x_items').innerHTML = count + ' ' + ((count == 1) ? item.type : checkName);

@@ -600,8 +600,8 @@ li.filter:hover {
 
 .cd-timeline-content h3 {
   color: #2196f3;
-  margin-top: 7px;
-  margin-left: 7px;
+  /* margin-top: 7px; */
+  /* margin-left: 7px; */
   font-style: italic;
 }
 
