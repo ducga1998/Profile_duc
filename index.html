@@ -23,19 +23,37 @@
             .skill li {
                 padding-bottom: 10px;
             }
+            header {
+                justify-content: center;
+                align-items: center;
+
+            }
+            .wrapper {
+                position: relative;
+                top: 190px;
+                background: red;
+                width: 800px;
+                z-index: 999999999;
+                box-shadow: 1px 1px 1px blakc;
+            }
+            .backgroundAvatar{
+            background: url('./duc.jpg');
+            width : 300px;
+            height: 300px;
+            background-size: cover;
+            }
         </style>
     </head>
     <body>
         <header>
             <div class="wrapper">
-                <div>
-                    <img src='duc.jpg' class='profile' alt="Photo of Duc" />
-                    <h1>Nguyễn Minh Đức</h1>
+                <div class="backgroundAvatar">
+                    <!-- <img src='duc.jpg' class='profile' alt="Photo of Duc" /> -->
                 </div>
 
 
                 <div class="skill">
-
+                    <h1>Nguyễn Minh Đức</h1>
                     <h1>Skill</h1>
                     <div class="stack">
                         <ul>
@@ -55,8 +73,9 @@
             </div>
 
 
-            <div style="text-align : center"> <ul id='links'></ul> </div>
+
         </header>
+        <div style="text-align : center"> <ul id='links'></ul> </div>
         <h1 id='view_x_items'></h1>
         <section id='cd-timeline' class='cd-container'>
 
