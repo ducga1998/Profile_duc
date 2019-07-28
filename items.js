@@ -132,15 +132,15 @@ me = [
     {
         type: 'Hackathon',
         name: 'AngleHack',
-        'description': 'vdfvdvdvdfvdfvdvdfvdffffffvdfvdfvd',
-        imageSrc: '',
-        date: ''
+        'description': 'IBM track champion in angelhack',
+        imageSrc: './ibm.jpg',
+        date: '6/2019'
     },
     {
         type: 'Hackathon',
-        name: 'AngleHack',
-        'description': 'vdfvdvdvdfvdfvdvdfvdffffffvdfvdfvd',
-        imageSrc: '',
-        date: ''
+        name: 'Hackathon AI grand',
+        'description': 'Won the third prize in the hackathon Grand AI',
+        imageSrc: './aigrand.jpg',
+        date: '7/2019'
     },
 ]

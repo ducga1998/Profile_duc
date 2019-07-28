@@ -107,6 +107,8 @@ header img {
       font-size: 24px;
       font-size: 1.5rem;
       padding-top: 16px;
+      display: block;
+      width: 100%;
   }
     header h2 {
         letter-spacing: inherit;
@@ -615,7 +617,20 @@ li.filter:hover {
   display : flex;
   flex-direction:  row;
   color : white;
+  /* padding : 10px; */
 }
 .cd-timeline-img:hover{
     background:  #06004e;
+}
+.descriceSkill {
+  background:#d4dade;
+  display: flex;
+  padding: 20px;
+}
+.descriceSkill li {
+  padding : 8px;
+  list-style: none;
+}
+.descriceSkill ul {
+  margin-right : 40px;
 }

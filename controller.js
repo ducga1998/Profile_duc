@@ -34,6 +34,9 @@ function useImage(type) {
     } else if (type == "Design") {
         icon = "icons/book.svg";
     }
+    else {
+        icon = "icons/memory.svg";
+    }
     var output = `<div class='cd-timeline-img cd-picture' style='background-color: ${color}'>
         <img src='${icon}' alt='${type}'></div>`;
     return output;
@@ -87,14 +90,17 @@ function populateTimeline(filter) {
                 output += `<h3>${item.description}</h3>`;
                 checkName = 'Background'
             } else {
-
+                checkName = item.type
                 output += item.description ? `<h3>${item.description}</h3>` : '';
             }
             output += "</p>";
             if (item.link !== undefined) {
                 output += getUrl(item.link, item.linkText);
             }
-
+            if (item.imageSrc) {
+                output += `<h1 style="padding : 20px 4px">${item.name}</h1>`
+                output += `<img src=${item.imageSrc} />`
+            }
             output += `<span class='cd-date'>${item.date}</span>`;
             currDate = item.date;
             output += "</div></div>";

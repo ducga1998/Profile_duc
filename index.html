@@ -18,7 +18,8 @@
         <script src="controller.js" async></script>
         <style>
             .skill {
-                margin-left: 100px;
+                /* margin-left: 100px; */
+                padding: 20px;
             }
             .skill li {
                 padding-bottom: 10px;
@@ -30,22 +31,55 @@
             }
             .wrapper {
                 position: relative;
-                top: 190px;
-                background: red;
+                top: 158px;
+                background: #3F51B5;
                 width: 800px;
                 z-index: 999999999;
-                box-shadow: 1px 1px 1px blakc;
+                box-shadow: 1px 1px 19px 1px #3F51B5;
             }
             .backgroundAvatar{
             background: url('./duc.jpg');
-            width : 300px;
-            height: 300px;
+            width: 316px;
+            height: 316px;
             background-size: cover;
             }
+            .section {
+                width: 100%;
+                font-size: 1.2em;
+                /* text-align: center; */
+                margin-top: 136px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding : 20px;
+            }
+
+            .section h1  {
+                padding:  20px;
+            }
+            .wrapperDesc {
+                display: flex;
+                flex-direction: row
+            }
+        .wrapperDesc:nth-child(1) {
+            border-right : 1px solid black;
+        }
+        .navgation-link {
+            text-align : center;
+            background : #3f51b5;
+            padding : 20px;
+
+
+        }
+        .skill h3 {
+            padding : 10px;
+        }
         </style>
     </head>
     <body>
         <header>
+            <h1>Nguyễn Minh Đức</h1>
             <div class="wrapper">
                 <div class="backgroundAvatar">
                     <!-- <img src='duc.jpg' class='profile' alt="Photo of Duc" /> -->
@@ -53,21 +87,13 @@
 
 
                 <div class="skill">
-                    <h1>Nguyễn Minh Đức</h1>
-                    <h1>Skill</h1>
-                    <div class="stack">
-                        <ul>
-                            <li>HTML, CSS</li>
-                            <li>
-                                Javascript, Typescript
-                            </li>
-                            <li>React, React Native</li>
-                            <li>GraphQL</li>
-                            <li>Nodejs</li>
-                            <li>Git</li>
-                            <li>AWS</li>
-                        </ul>
-                    </div>
+
+                    <h3 style="font-size: 1.4em;">I am Nguyen Minh Duc</h3>
+                    <h3><i>Javascript developer </i></h3>
+                    <h3>Age : 21(born : 1998)</h3>
+                    <h3>Gmail : duc2820@gmail.com</h3>
+                    <h3>Phone : +84910259462</h3>
+
 
                 </div>
             </div>
@@ -75,7 +101,43 @@
 
 
         </header>
-        <div style="text-align : center"> <ul id='links'></ul> </div>
+        <div class="section">
+            <h1>SKill</h1>
+            <div class="wrapperDesc">
+                <div class="descriceSkill">
+                    <h1>Technical</h1>
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>Javascript, Typescript</li>
+                        <li>React, React Native</li>
+                        <li>GraphQL</li>
+
+                    </ul>
+                    <ul>
+                        <li>Nodejs</li>
+                        <li>Git</li>
+                        <li>AWS</li>
+                    </ul>
+
+                </div>
+                <div class="descriceSkill">
+                    <h1>Ecommerce</h1>
+
+                    <ul>
+                        <li>Shopify</li>
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="navgation-link">
+            <ul id='links'></ul>
+        </div>
         <h1 id='view_x_items'></h1>
         <section id='cd-timeline' class='cd-container'>
 
@@ -84,5 +146,153 @@
             <div id='contact-list'></div>
         </section>
 
-    </body>
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script><!-- Code injected by live-server -->
+        <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script><!-- Code injected by live-server -->
+        <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script><!-- Code injected by live-server -->
+        <script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
