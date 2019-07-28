@@ -143,7 +143,7 @@ function contactDialog() {
 }
 window.onload = function () {
 
-    categories = populateTimeline(localStorage.getItem('cv-active') || 'Background');
+    categories = populateTimeline(localStorage.getItem('cv-active') || 'Hackathon');
     console.log('categories', categories)
     categorieSave = categories
     populateMenu(categories);
